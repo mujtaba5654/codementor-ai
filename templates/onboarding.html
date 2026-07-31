@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CodeMentor AI</title>
+</head>
+<body>
+
+<h1>Welcome to CodeMentor AI</h1>
+
+<form action="/start" method="POST">
+
+    <label>Name</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Experience Level</label><br>
+
+    <select name="level">
+
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+
+    </select>
+
+    <br><br>
+
+    <label>Current Topic</label><br>
+
+    <input type="text"
+           name="topic"
+           placeholder="Example: Flask">
+
+    <br><br>
+
+    <label>Learning Goal</label><br>
+
+    <input type="text"
+           name="goal"
+           placeholder="Become Backend Developer">
+
+    <br><br>
+
+    <button type="submit">
+
+        Start Learning
+
+    </button>
+
+</form>
+
+</body>
+</html>
