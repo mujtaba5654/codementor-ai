@@ -1,52 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeMentor AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
 
-<h1>Welcome to CodeMentor AI</h1>
+<body class="onboarding-page">
 
-<form action="/start" method="POST">
+<div class="onboarding-container">
 
-    <label>Name</label><br>
-    <input type="text" name="name" required><br><br>
+    <div class="logo">
+        💻
+    </div>
 
-    <label>Experience Level</label><br>
+    <h1>CodeMentor AI</h1>
 
-    <select name="level">
+    <p class="subtitle">
+        Learn Python with your personal AI Coding Mentor
+    </p>
 
-        <option>Beginner</option>
-        <option>Intermediate</option>
-        <option>Advanced</option>
+    <form action="/start" method="POST">
 
-    </select>
+        <label>Name</label>
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
 
-    <br><br>
+        <label>Experience Level</label>
 
-    <label>Current Topic</label><br>
+        <select name="level">
 
-    <input type="text"
-           name="topic"
-           placeholder="Example: Flask">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
 
-    <br><br>
+        </select>
 
-    <label>Learning Goal</label><br>
+        <label>Current Topic</label>
 
-    <input type="text"
-           name="goal"
-           placeholder="Become Backend Developer">
+        <input
+            type="text"
+            name="topic"
+            placeholder="Example: Flask"
+        >
 
-    <br><br>
+        <label>Learning Goal</label>
 
-    <button type="submit">
+        <input
+            type="text"
+            name="goal"
+            placeholder="Become Backend Developer"
+        >
 
-        Start Learning
+        <button type="submit">
+            🚀 Start Learning
+        </button>
 
-    </button>
+    </form>
 
-</form>
+</div>
 
 </body>
 </html>

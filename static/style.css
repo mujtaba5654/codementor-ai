@@ -182,3 +182,120 @@ body.chat-page {
 @media (max-width: 700px) {
     .stat-cards { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* ================= ONBOARDING PAGE ================= */
+
+body.onboarding-page{
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.onboarding-container{
+
+    width:430px;
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.logo{
+
+    width:70px;
+    height:70px;
+    margin:auto;
+    margin-bottom:15px;
+
+    border-radius:50%;
+    background:#2563eb;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:34px;
+
+}
+
+.onboarding-container h1{
+
+    color:white;
+    text-align:center;
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+    color:#cbd5e1;
+    margin-bottom:30px;
+
+}
+
+.onboarding-container label{
+
+    display:block;
+    color:white;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-size:15px;
+
+}
+
+.onboarding-container input,
+.onboarding-container select{
+
+    width:100%;
+    padding:14px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    background:#334155;
+    color:white;
+
+    font-size:15px;
+
+}
+
+.onboarding-container input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+.onboarding-container button{
+
+    width:100%;
+    margin-top:30px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+    color:white;
+
+    font-size:17px;
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.onboarding-container button:hover{
+
+    background:#1d4ed8;
+    transform:translateY(-2px);
+
+}
