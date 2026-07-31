@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMentor AI</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="chat-page">
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        <h2>💻 CodeMentor AI</h2>
+        <span>Your Python Coding Mentor</span>
+    </div>
+
+    <div id="chat-box">
+
+        <div class="bot-message">
+            👋 Hello! I'm CodeMentor AI.
+            <br><br>
+            Ask me anything about Python.
+        </div>
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+            id="message"
+            type="text"
+            placeholder="Ask a Python question...">
+
+        <button id="send-btn">
+            Send
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

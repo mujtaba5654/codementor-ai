@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CodeMentor AI — Usage Dashboard</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="dashboard-wrap">
+    <h1>📊 Usage & Cost Dashboard</h1>
+
+    <div class="stat-cards">
+      <div class="stat-card">
+        <span class="stat-label">Total Requests</span>
+        <span class="stat-value" id="totalRequests">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Total Tokens</span>
+        <span class="stat-value" id="totalTokens">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Input / Output</span>
+        <span class="stat-value" id="ioTokens">—</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-label">Estimated Cost</span>
+        <span class="stat-value" id="totalCost">—</span>
+      </div>
+    </div>
+
+    <h2>Per-Session Breakdown</h2>
+    <table id="sessionTable">
+      <thead>
+        <tr><th>Session ID</th><th>User</th><th>Requests</th><th>Input Tokens</th><th>Output Tokens</th><th>Cost (USD)</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <h2>Recent Requests</h2>
+    <table id="recentTable">
+      <thead>
+        <tr><th>ID</th><th>Session</th><th>Model</th><th>Input</th><th>Output</th><th>Total</th><th>Cost (USD)</th><th>Time</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+</body>
+</html>
