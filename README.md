@@ -106,7 +106,7 @@ Token counts are read directly from Gemini's `response.usage_metadata` on every 
 ```bash
    pip install -r requirements.txt
 ```
-4. Copy `.env.example` to `.env` and add your own Gemini API key: REMOVED
+4. Copy `.env.example` to `.env` and add your own GEMINI_API_KEY=YOUR_API_KEY_HERE
 
 5. Run the app:
 ```bash
